@@ -1,12 +1,12 @@
 #!/bin/bash
 
-INT=1
+CURR=1
 SUBNET="192.168.1"
  
-while [ $INT -lt 255 ] ; do
-  ping -c 1 -t 1 $SUBNET.$INT 
+while [ $CURR -lt 255 ] ; do
+  ping -c 1 -t 1 $SUBNET.$CURR
   if [ "$?" -eq "0" ]; then
-    echo "$SUBNET.$INT"
+    echo "$SUBNET.$CURR"
   fi
-  let INT=$INT+1
+  let CURR=$CURR+1
 done

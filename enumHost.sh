@@ -35,13 +35,11 @@ if [ ! -d $working_directory ]; then
 	mkdir $working_directory 
 fi 
 
-echo -e "------------------------------------"
 echo -e "------Go To working Directory-------"
 echo -e "------------------------------------"
 cd $working_directory
 
 
-echo -e "------------------------------------"
 echo -e "-------Enumerate $hostname ---------"
 echo -e "------------------------------------"
 echo -e "[*] DNS server Listing : \n"
